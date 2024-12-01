@@ -28,8 +28,8 @@ public class Main {
 
         System.out.println("Задача №3");
         int totalPeople = 12_000_000;
-        int fertility = 8;
-        int mortality = 17;
+        int fertility = 17;
+        int mortality = 8;
         int increasePerYear = 0;
         int populationDecline = 0;
         for (int year = 1; year <= 10; year++) {
@@ -60,8 +60,6 @@ public class Main {
             if (month1 % 6 == 0) {
                 System.out.println(" Месяц " + month1 + " сумма равна " + total1);
             }
-            System.out.println(total1);
-            System.out.println(month1);
         }
 
         System.out.println("Задача №6");
@@ -75,6 +73,7 @@ public class Main {
             if (month2 % 6 == 0) {
                 System.out.println("Месяц " + month2 + " сумма равна " + total2);
             }
+        }
 
             System.out.println("Задача №7");
             int firstFriday = 3;
@@ -102,4 +101,3 @@ public class Main {
             }
         }
     }
-}
