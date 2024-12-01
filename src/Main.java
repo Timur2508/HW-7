@@ -27,16 +27,16 @@ public class Main {
         }
 
         System.out.println("Задача №3");
-        int totalPeople = 12_000_000;
-        int fertility = 17;
-        int mortality = 8;
-        int increasePerYear = 0;
-        int populationDecline = 0;
-        for (int year = 1; year <= 10; year++) {
-            increasePerYear = totalPeople / 1000 * mortality;
-            populationDecline = totalPeople / 1000 * fertility;
-            totalPeople = totalPeople + increasePerYear - populationDecline;
-            System.out.println("Год " + year + ", численность населения составляет " + totalPeople);
+        int population = 12000000;
+        int born = 17;
+        int death = 8;
+        int dif = born - death;
+        int i1 = 2023;
+        while (i1 <= 2032) {
+            population += population * dif / 1000;
+            i1++;
+            System.out.println("Год " + i1 + " численность населения составляет " + population);
+            System.out.println(population);
         }
 
         System.out.println("Задача №4");
